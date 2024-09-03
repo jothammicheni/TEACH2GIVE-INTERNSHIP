@@ -1,0 +1,91 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color: rgb(237, 245, 245);
+    width: 100wh;
+    height: 10vh;
+}
+
+nav{
+    width: 100wh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+#profile{
+    width: 50px;
+    height: 50px;
+}
+li{
+    list-style-type: none;
+    margin-left: 30px;
+   
+}ul{
+    display: flex;
+    text-align: center;
+}
+.container-main{
+    height: 90vh;
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    flex-direction: row;
+}
+.content-holder{
+    height: 80vh;
+    min-width: 50%;
+    margin: 10px;
+    background-color: rgb(235, 236, 243);
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px rgb(241, 235, 235);
+    
+}
+
+h2{
+    text-align: center;
+}
+.btn-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.shipping-details-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px; 
+}
+button{
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    margin-left: 20px;
+    border: 0px;
+    background-color: rgb(22, 7, 219);
+    font-style: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+hr{
+    margin-top: 30px;
+}

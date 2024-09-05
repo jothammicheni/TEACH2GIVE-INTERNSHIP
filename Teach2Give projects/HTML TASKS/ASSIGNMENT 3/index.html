@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="navbar">
-        <nav>
+        <nav id="nav1">
+            <ul>
+                
+                    <img id="profile" src="../../images/logo.png" alt="">
+                
+            </ul>
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
+            <ul style="padding-right: 20px;">
+                <li>Account</li>
+                <li>3 Items</li>
+                <i style="margin-left: 2px;" class="fa-solid fa-caret-down"></i>
+
+                <img id="profile" src="../../images/profile.jpg" alt="">
+
+
+            </ul>
+        </nav>
+
+
+        <nav id="nav2">
             <ul>
                 <li>
                     <img id="profile" src="../../images/logo.png" alt="">
@@ -25,110 +53,112 @@
                 <li>Account</li>
                 <li>3 Items</li>
                 <i style="margin-left: 2px;" class="fa-solid fa-caret-down"></i>
-                
-                    <img id="profile" src="../../images/profile.jpg" alt="">
-               
-                
+
+                <img id="profile" src="../../images/profile.jpg" alt="">
+
+
             </ul>
         </nav>
 
     </div>
-    
+
     <hr style="width: 1px;">
- <div class="container-main">
-   <br style="height: 2px;">
+    <div class="container-main">
+        <br style="height: 2px;">
 
-    <div class="content-holder">
-        <div class="shipping-tracking" style="background-color: antiquewhite;">
-         <li>Account
-          <span style="padding-left: 10px; padding-right:10px">          
-            &minus; 
-            <i class="fa-solid fa-square-check"></i>
-            &minus;
-        </span>
-         </li>
-         
-         <li>Shipping 
-            <span style="padding-left: 10px; padding-right:10px">          
-                &minus;  
-                <i class="fa-solid fa-square-check"></i>
-                &minus;
-            </span>
-        </li>
-    
-         <li>Payment</li>
-         
-        </div>
-        <div class="login">
-            <div style="width:100%">
-                <h2 style="text-align: start;">Account Details</h2>
+        <div class="content-holder">
+            <div class="shipping-tracking" style="background-color: antiquewhite;">
+                <li>Account
+                    <span style="padding-left: 10px; padding-right:10px">
+                        &minus;
+                        <i class="fa-solid fa-square-check"></i>
+                        &minus;
+                    </span>
+                </li>
+
+                <li>Shipping
+                    <span style="padding-left: 10px; padding-right:10px">
+                        &minus;
+                        <i class="fa-solid fa-square-check"></i>
+                        &minus;
+                    </span>
+                </li>
+
+                <li>Payment</li>
+
             </div>
-            
-           <form action="">
-                
-               <label for="email">Enter email:</label>
-               <input type="email" name="email" id="email" placeholder="jothammurimi@gmail.com">
+            <div class="login">
+                <div style="width:100%">
+                    <h2 style="text-align: start;">Account Details</h2>
+                </div>
 
-               <label for="password">Enter password:</label>
-               <input type="password" name="password" id="password">
+                <form action="">
 
-               <div class="btn-holder">
-                <p>register for Account?</p>
-                <button>Login</button>
-               </div>
-           </form>
-           <hr >
+                    <label for="email">Enter email:</label>
+                    <input type="email" name="email" id="email" placeholder="jothammurimi@gmail.com">
 
-           <div class="btn-holder">
-            <p>Cancel order</p>
-            <button>Shipping Details</button>
-           </div>
+                    <label for="password">Enter password:</label>
+                    <input type="password" name="password" id="password">
+
+                    <div class="btn-holder">
+                        <p>register for Account?</p>
+                        <button>Login</button>
+                    </div>
+                </form>
+                <hr>
+
+                <div class="btn-holder">
+                    <p>Cancel order</p>
+                    <button>Shipping Details</button>
+                </div>
+            </div>
         </div>
+
+        <div class="shipping-details-holder">
+            <h2 style="text-align: start;">Order Summary</h2>
+            <div class="image-holder">
+                <img class="head-phone" src="../../images/MQTR3.jpeg" alt="">
+            </div>
+
+            <div class="price-holder">
+                <div class="price">
+                    <p>Sonny Wireless Headphones</p>
+                    <h3>$6.45</h3>
+                </div>
+                <div class="btn-quantity">
+                    <button class="btn">-</button>
+                    <p>2</p>
+                    <button class="btn">+</button>
+                </div>
+            </div>
+            <p>gift Cards/Credits</p>
+            <div class="btn-quantity">
+                <button class="btn-apply1"></button>
+                <button class="btn-apply2">Apply</button>
+
+
+            </div>
+
+            <div class="holders">
+                <p>Sub Total:</p>
+                <p style="font-weight: bold;">$4.00</p>
+            </div>
+            <div class="holders">
+                <p>Tax:</p>
+                <p style="font-weight: bold;">$1.00</p>
+            </div>
+            <div class="holders">
+                <p>Shipping:</p>
+                <p style="font-weight: bold; color:rgb(7, 186, 218)">Free</p>
+            </div>
+            <div class="holders">
+                <p>Total:</p>
+                <p style="font-weight: bold">$5.00</p>
+            </div>
+
+        </div>
+
     </div>
-     <div class="shipping-details-holder">
-         <h2 style="text-align: start;">Order Summary</h2>
-          <div class="image-holder">
-            <img class="head-phone" src="../../images/MQTR3.jpeg" alt="">
-          </div>
-
-          <div class="price-holder">
-              <div class="price">
-                 <p>Sonny Wireless Headphones</p>
-                 <h3>$6.45</h3>
-              </div>
-              <div class="btn-quantity">
-                <button class="btn">-</button>
-                <p>2</p>
-                <button class="btn">+</button>
-              </div>
-          </div>
-      <p>gift Cards/Credits</p>
-      <div class="btn-quantity">
-        <button class="btn-apply1"></button>
-        <button class="btn-apply2">Apply</button>
-         
-         
-      </div>
-
-      <div class="holders">
-         <p>Sub Total:</p>
-         <p style="font-weight: bold;">$4.00</p>
-      </div>
-      <div class="holders">
-        <p>Tax:</p>
-        <p style="font-weight: bold;">$1.00</p>
-     </div>
-     <div class="holders">
-        <p>Shipping:</p>
-        <p style="font-weight: bold; color:rgb(7, 186, 218)">Free</p>
-     </div>
-     <div class="holders">
-        <p>Total:</p>
-        <p style="font-weight: bold">$5.00</p>
-     </div>
-
-     </div>
-
-   </div>
 </body>
+
 </html>

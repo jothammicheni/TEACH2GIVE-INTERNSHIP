@@ -1,24 +1,27 @@
-body{
-    justify-content: center;
-   align-items: center;
-   display: flex;
-   background-color: rgb(186, 196, 206);
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(186, 196, 206);
 
-  }
-.container{
+}
+
+.container {
   max-width: 300px;
   margin: 20px;
   border-radius: 8px;
- text-align: center;
-  
- background-color: white;
- padding: 10px;
+  text-align: center;
+
+  background-color: white;
+  padding: 10px;
 
 }
-img{
+
+img {
   width: 300px;
   height: 300px;
 }
-h2{
-  font-weight: 400,900;
+
+h2 {
+  font-weight: 400, 900;
 }

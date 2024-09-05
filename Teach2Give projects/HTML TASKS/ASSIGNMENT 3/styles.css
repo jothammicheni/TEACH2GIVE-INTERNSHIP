@@ -12,12 +12,15 @@ body{
     top: 0px;
 }
 
-nav{
+#nav1{
     width: 100wh;
     display: flex;
     justify-content: space-between;
     align-items: center;
    
+}
+#nav2{
+    display: none;
 }
 #profile{
     width: 40px;
@@ -47,7 +50,7 @@ li{
     height: 80vh;
     min-width: 60%;
     margin: 10px;
-    background-color: rgb(235, 236, 243);
+    background-color: rgb(204, 207, 228);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -166,4 +169,34 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 900px){
+    #nav1 {
+        display: none;
+    }
+
+    #nav2{
+        height: auto;
+        display: gone;
+        flex-direction: column;
+    }
+    .content-holder{
+        margin-top: 20px;
+        
+    }
+
+    .container-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .shipping-details-holder{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+
+    }
 }

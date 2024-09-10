@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+    }
+    button{
+        width: 250px;
+        border-radius: 8px;
+        text-align: center;
+        height: 50px;
+        margin-top: 20px;
+        background-color: rgb(147, 147, 209);
+        color: black;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+       <input type="text" class="input" id="input"/>
+       <button id="btnDisplay">Display</button>
+
+       <h2 style="text-align: start;" >You entered: <output id="output"></output></h2>
+
+     
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

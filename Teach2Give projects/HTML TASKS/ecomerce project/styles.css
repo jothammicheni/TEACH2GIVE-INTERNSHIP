@@ -1,0 +1,47 @@
+.main-container{
+    width: 90wh;
+    height: 90vh;
+    background-color: rgb(171, 206, 206);
+
+}
+.product{
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
+}
+.img-holder{
+   
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 60%;
+    height: 30%;
+
+}
+.product-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+
+}p{
+   
+
+}
+h2{
+    color: red;
+}
+.shipment{
+    width: 50%;
+    height: auto;
+    padding: 3px;
+    background-color: rgb(211, 205, 205);
+    border-radius: 8px;
+}

@@ -1,0 +1,43 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.reg-container{
+    background-color: rgb(98, 230, 208);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+   
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#submit{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+
+}

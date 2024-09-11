@@ -4,10 +4,9 @@ function check_palindrome(str) {
 
     let string=str.toLowerCase().replace(punctuation,"").replace(/\s+/g, '')
     
-    console.log(string); 
 
     const strRev =  str.split('').reverse().join('').replace(punctuation,"").replace(/\s+/g, '').toLowerCase()  
-    console.log(strRev);
+   
     if(string===strRev){
         console.log(true);
     }else{

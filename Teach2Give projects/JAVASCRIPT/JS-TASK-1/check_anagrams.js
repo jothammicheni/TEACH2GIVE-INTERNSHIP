@@ -14,8 +14,7 @@ function check_anagram(str1, str2) {
         string1 = string1.sort().join('')
         string2 = string2.sort().join("")
 
-        console.log("" + string1)
-        console.log("" + string2)
+
 
         if (string1 === string2) {
             console.log(`${str1} and ${str2} are anagrams`)

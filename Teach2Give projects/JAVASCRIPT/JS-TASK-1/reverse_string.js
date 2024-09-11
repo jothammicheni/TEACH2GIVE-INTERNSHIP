@@ -6,3 +6,6 @@ function reverseString(str){
 }
 
 reverseString('jotham')
+reverseString('hello')
+reverseString('listen')
+reverseString('silent')

@@ -1,0 +1,14 @@
+{
+  "name": "js-task-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CaseInsensitivePalindrome.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon check_Palindrome.js  "
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

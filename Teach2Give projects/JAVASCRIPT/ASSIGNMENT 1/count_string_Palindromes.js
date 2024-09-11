@@ -18,6 +18,6 @@ function countPalindromes(str) {
 }
 
 
-console.log(countPalindromes("aaa"));
+console.log(countPalindromes("aaaa"));
 console.log(countPalindromes("abc"));
 console.log(countPalindromes("racecar"));

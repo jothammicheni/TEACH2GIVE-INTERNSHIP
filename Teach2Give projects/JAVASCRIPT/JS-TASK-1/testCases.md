@@ -1,5 +1,7 @@
+<h1 style=""color:"red">Here are the test results</h1>
 
-<h3>checking parandromes</h3>
+
+<h3>1 .checking parandromes</h3>
 <img src="https://github.com/jothammicheni/TEACH2GIVE-INTERNSHIP/blob/main/Teach2Give%20projects/JAVASCRIPT/JS-TASK-1/test-cases-results/Palindrome.png"/>
 
 <h3>2. Reverse a String</h3>

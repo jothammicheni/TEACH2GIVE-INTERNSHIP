@@ -1,11 +1,11 @@
 
 function isCaseInsensitivePalindrome(str) {
-    const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const cleanedString = str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-    const reversedStr = cleanedStr.split('').reverse().join('');
+    const reversedString = cleanedStr.split('').reverse().join('');
 
 
-    return cleanedStr === reversedStr;
+    return cleanedString === reversedString;
 }
 
 console.log(isCaseInsensitivePalindrome("A man, a plan, a canal, Panama")); 

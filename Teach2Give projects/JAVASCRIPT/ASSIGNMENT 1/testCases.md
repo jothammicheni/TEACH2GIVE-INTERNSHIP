@@ -1,4 +1,4 @@
-<h1 style=""color:"red">Here are the test results</h1>
+<h1 style="color:red;">Here are the test results</h1>
 
 
 <h3>1 .checking parandromes</h3>

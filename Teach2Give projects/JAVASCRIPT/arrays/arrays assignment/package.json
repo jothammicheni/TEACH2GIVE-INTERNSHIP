@@ -1,0 +1,16 @@
+{
+  "name": "arrays-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "array.js",
+  "scripts": {
+    "test": "node array",
+    "dev":"nodemon array"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

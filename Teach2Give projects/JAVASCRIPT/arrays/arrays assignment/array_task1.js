@@ -5,8 +5,9 @@ const users = [
       location: "New York",
       friends: [2, 3, 4],
       posts: [
-        { content: "Great day at Central Park!", timestamp: "2024-05-10T12:00:00", likes: 15 },
-        { content: "Loving the vibes in NYC!", timestamp: "2024-05-15T08:30:00", likes: 8 },
+
+        { content: "Great day at Central Park!", timestamp: "2024-09-10T12:00:00", likes: 15 },
+        { content: "Loving the vibes in NYC!", timestamp: "2024-09-15T08:30:00", likes: 8 },
         { content: "Visited the Statue of Liberty today!", timestamp: "2024-05-05T17:45:00", likes: 20 }
       ]
     },
@@ -16,7 +17,7 @@ const users = [
       location: "San Francisco",
       friends: [1, 3],
       posts: [
-        { content: "Hiking in the Bay Area!", timestamp: "2024-05-12T14:20:00", likes: 12 },
+        { content: "Hiking in the Bay Area!", timestamp: "2024-09-12T14:20:00", likes: 12 },
         { content: "Enjoying the sunny weather!", timestamp: "2024-05-14T11:10:00", likes: 6 }
       ]
     },

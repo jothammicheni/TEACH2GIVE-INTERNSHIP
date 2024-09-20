@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Table</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th{
+            background-color: rgb(93, 93, 202);
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 20px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todos Table</h1>
+    <div id="table-container"></div>
+
+    <script>
+        // Function to create the table
+        function createTodosTable(data) {
+            const table = document.createElement('table');
+            
+            // Create table header
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            ['User ID', 'ID', 'Title', 'Completed'].forEach(headerText => {
+                const th = document.createElement('th');
+                th.textContent = headerText;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            // Create table body
+            const tbody = document.createElement('tbody');
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                ['userId', 'id', 'title', 'completed'].forEach(key => {
+                    const td = document.createElement('td');
+                    td.textContent = item[key];
+                    row.appendChild(td);
+                });
+                tbody.appendChild(row);
+            });
+            table.appendChild(tbody);
+
+            return table;
+        }
+
+        // Fetch data and create table
+        fetch('https://jsonplaceholder.typicode.com/todos/')
+            .then(response => response.json())
+            .then(data => {
+                const tableContainer = document.getElementById('table-container');
+                const table = createTodosTable(data);
+                tableContainer.appendChild(table);
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

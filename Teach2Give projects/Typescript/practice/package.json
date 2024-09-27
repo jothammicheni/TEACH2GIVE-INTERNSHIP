@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node practice1.js",
-    "dev": "nodemon practice1.js"
+    "test": "node unions.js",
+    "dev": "nodemon unions.js"
 
   },
   "keywords": [],

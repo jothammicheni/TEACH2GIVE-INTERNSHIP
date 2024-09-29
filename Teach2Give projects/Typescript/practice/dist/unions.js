@@ -7,4 +7,9 @@ const userId = (name) => {
 userId(1234);
 userId('jehhdjhdh');
 userId(true);
+const logId = (id) => {
+    console.log(id);
+};
+logId("ertyui");
+logId(3454);
 //# sourceMappingURL=unions.js.map

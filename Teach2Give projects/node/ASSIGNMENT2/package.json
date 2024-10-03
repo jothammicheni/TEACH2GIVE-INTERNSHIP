@@ -1,0 +1,18 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "nodemon": "^3.1.7",
+    "uuid": "^10.0.0"
+  }
+}

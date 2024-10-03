@@ -1,6 +1,5 @@
-const apiBaseUrl = 'http://localhost:3000/api/events';
+const apiBaseUrl = 'http://localhost:3000/api/product';
 
-// Elements
 const eventsContainer = document.getElementById('eventsContainer');
 const createEventBtn = document.getElementById('createEventBtn');
 const createModal = document.getElementById('createModal');
@@ -70,6 +69,7 @@ const displayEvents = (events) => {
       </div>
       <div class="btn-group">
         <button class="btn edit" data-id="${event.id}">Edit</button>
+        <button class="btn view" data-id="${event.id}">View Details</button>
         <button class="btn delete" data-id="${event.id}">Delete</button>
       </div>
     `;
@@ -236,5 +236,50 @@ window.addEventListener('click', (e) => {
   }
   if (e.target === updateModal) {
     hideModal(updateModal);
+  }
+});
+
+// Elements for the view details modal
+const viewModal = document.getElementById('viewModal');
+const closeViewModal = document.getElementById('closeViewModal');
+
+// Function to show event details
+const showEventDetails = (event) => {
+  document.getElementById('viewTitle').textContent = event.title;
+  document.getElementById('viewPrice').textContent = event.price;
+  document.getElementById('viewDate').textContent = new Date(event.date).toLocaleDateString();
+  document.getElementById('viewLocation').textContent = event.location;
+  document.getElementById('viewCompany').textContent = event.company;
+  document.getElementById('viewImageUrl').src = event.imageUrl;
+  showModal(viewModal);
+};
+
+// Handle View Details
+eventsContainer.addEventListener('click', async (e) => {
+  if (e.target.classList.contains('view')) {
+    const eventId = e.target.dataset.id;
+    try {
+      const response = await fetch(`${apiBaseUrl}/${eventId}`);
+      if (response.ok) {
+        const event = await response.json();
+        showEventDetails(event);
+      } else {
+        showNotification('Event not found', true);
+      }
+    } catch (error) {
+      showNotification('Failed to fetch event details', true);
+      console.error(error);
+    }
+  }
+});
+
+// Close View Modal
+closeViewModal.addEventListener('click', () => {
+  hideModal(viewModal);
+});
+//viewModal hidden if clicked outside of it
+window.addEventListener('click', (e) => {
+  if (e.target === viewModal) {
+    hideModal(viewModal);
   }
 });

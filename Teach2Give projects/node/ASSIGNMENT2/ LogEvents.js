@@ -1,7 +1,7 @@
 const { format } = require('date-fns');
 const { v4: uuid } = require('uuid');
 const fs = require('fs').promises;
-const fsSync = require('fs'); // Import regular fs for synchronous operations
+const fsSync = require('fs'); 
 const path = require('path');
 
 // Async function to log events

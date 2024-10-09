@@ -1,34 +1,35 @@
-// server.ts
-
 import express, { Response, Request, Express } from 'express';
 import dotenv from 'dotenv';
-import { getXataClient } from './xata'; // Adjust the import path if necessary
+import { getXataClient } from './xata'; 
 
 dotenv.config();
 
 const app: Express = express();
-app.use(express.json()); // Middleware to parse JSON bodies
+app.use(express.json());
 
-const PORT = process.env.PORT || 3000; // Default port if not specified
+const PORT = process.env.PORT || 3000; 
 
-// Define interfaces for the request bodies
 interface RegisterRequest {
     email: string;
     password: string;
     name: string;
+    age: number;   
+    city: string; 
 }
 
 interface UpdateUserRequest {
     email?: string;
     password?: string;
     name?: string;
+    age?: number;   
+    city?: string;  
 }
 
 // POST request for user registration
 app.post('/register', async (req: Request<{}, {}, RegisterRequest>, res: Response) => {
-    const { email, password, name } = req.body;
+    const { email, password, name, age, city } = req.body;
 
-    if (!email || !password || !name) {
+    if (!email || !password || !name || age === undefined || !city) {
         res.status(400).json({ message: 'All fields are required' });
     }
 
@@ -37,8 +38,10 @@ app.post('/register', async (req: Request<{}, {}, RegisterRequest>, res: Respons
     try {
         await client.db.users.create({
             email,
-            password, // Store the hashed password
-            name
+            password, 
+            name,
+            age,     
+            city      
         });
 
         res.status(201).json({ message: 'User registered successfully' });
@@ -48,12 +51,12 @@ app.post('/register', async (req: Request<{}, {}, RegisterRequest>, res: Respons
     }
 });
 
-// GET request to retrieve all users
+// retrieve all users
 app.get('/users', async (req: Request, res: Response) => {
     const client = getXataClient();
 
     try {
-        const users = await client.db.users.getAll(); // Adjust based on your database client
+        const users = await client.db.users.getAll(); 
         res.status(200).json(users);
     } catch (error) {
         console.error(error);
@@ -81,15 +84,17 @@ app.get('/users/:id', async (req: Request<{ id: string }>, res: Response) => {
 // PUT request to update user information
 app.put('/users/:id', async (req: Request<{ id: string }, {}, UpdateUserRequest>, res: Response) => {
     const { id } = req.params;
-    const { email, password, name } = req.body;
+    const { email, password, name, age, city } = req.body;
 
     const client = getXataClient();
 
     try {
         const updatedUser = await client.db.users.update(id, {
             email,
-            password, // Update with hashed password
-            name
+            password, 
+            name,
+            age,      
+            city     
         });
 
         res.status(200).json({ message: 'User updated successfully', user: updatedUser });
@@ -122,7 +127,9 @@ app.delete('/users/:id', async (req: Request<{ id: string }>, res: Response) => 
 
     try {
         await client.db.users.delete(id);
-        res.status(204).send(); // No content
+        res.status(204).json({
+            message: "item deleted",
+        }); 
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Server error' });

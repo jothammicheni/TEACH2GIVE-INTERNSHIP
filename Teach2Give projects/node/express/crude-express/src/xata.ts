@@ -9,17 +9,18 @@ import type {
 } from "@xata.io/client";
 import dotenv from 'dotenv';
 
-// Load environment variables from .env file
 dotenv.config();
 
-// Define the schema for your tables
+//define a table
 const tables: readonly BaseSchema[] = [
   {
     name: 'users',
     columns: [
       { name: 'email', type: 'string' },
       { name: 'password', type: 'string' },
-      { name: 'name', type: 'string' }
+      { name: 'name', type: 'string' },
+      { name: 'age', type: 'integer' }, 
+      { name: 'city', type: 'string' }    
     ]
   }
 ] as const;
@@ -32,6 +33,8 @@ export type UserRecord = XataRecord & {
   email: string;
   password: string;
   name: string;
+  age: number;  
+  city: string; 
 };
 
 export type DatabaseSchema = {

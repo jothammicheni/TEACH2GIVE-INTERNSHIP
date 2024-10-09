@@ -27,7 +27,6 @@ export const getAllProducts = async (req, res) => {
   res.end(JSON.stringify(data.events));
 };
 
-// Renamed from `getProducts` to `getProductsById`
 export const getProductsById = async (req, res, id) => {
   const data = await readData();
   const event = data.events.find(event => event.id === parseInt(id));

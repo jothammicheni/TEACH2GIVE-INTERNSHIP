@@ -1,0 +1,31 @@
+{
+  "name": "1.queryparams",
+  "version": "1.0.0",
+  "main": "notes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.ts",
+    "build": "npx tsc",
+    "dev": "nodemon src/server.ts "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.4",
+    "chalk": "^5.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@xata.io/client": "^0.0.0-next.v403cdd55cb26b69c074dbc07b44daa0c2a0a77b6",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "ts-node": "^10.9.2"
+  }
+}

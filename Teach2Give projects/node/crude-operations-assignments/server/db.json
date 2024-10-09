@@ -53,15 +53,6 @@
       "date": "August 20, 2022",
       "location": "Central Park, New York City",
       "company": "Live Nation"
-    },
-    {
-      "id": 7,
-      "imageUrl": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "title": "Food and Wine Festival",
-      "price": 50,
-      "date": "September 15-18, 2022",
-      "location": "Union Square, San Francisco",
-      "company": "Taste of San Francisco"
     }
   ]
 }

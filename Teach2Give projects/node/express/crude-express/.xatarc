@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://jotham-s-workspace-ss39qk.us-east-1.xata.sh/db/qa-crude",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

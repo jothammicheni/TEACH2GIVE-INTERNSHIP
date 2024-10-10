@@ -1,0 +1,19 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cs32b522go8te7ad4n1g",
+    "operations": [
+      {
+        "drop_column": {
+          "table": "users",
+          "column": "city"
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cs32b522go8te7ad4n1g",
+  "parent": "mig_cs32b03ujno0fvdn37v0",
+  "schema": "public",
+  "startedAt": "2024-10-09T06:41:25.211238Z"
+}

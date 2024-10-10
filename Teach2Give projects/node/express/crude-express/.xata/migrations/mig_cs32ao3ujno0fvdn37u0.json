@@ -1,0 +1,26 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cs32ao3ujno0fvdn37u0",
+    "operations": [
+      {
+        "add_column": {
+          "table": "users",
+          "column": {
+            "pk": false,
+            "name": "city",
+            "type": "text",
+            "unique": false,
+            "comment": "",
+            "nullable": true
+          }
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cs32ao3ujno0fvdn37u0",
+  "parent": "mig_cs32akrujno0fvdn37t0",
+  "schema": "public",
+  "startedAt": "2024-10-09T06:40:32.904759Z"
+}

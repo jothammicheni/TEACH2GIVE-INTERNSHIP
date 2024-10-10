@@ -1,0 +1,26 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cs32bhbujno0fvdn3800",
+    "operations": [
+      {
+        "add_column": {
+          "table": "users",
+          "column": {
+            "pk": false,
+            "name": "age",
+            "type": "text",
+            "unique": false,
+            "comment": "",
+            "nullable": true
+          }
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cs32bhbujno0fvdn3800",
+  "parent": "mig_cs32b522go8te7ad4n1g",
+  "schema": "public",
+  "startedAt": "2024-10-09T06:42:14.45291Z"
+}

@@ -1,0 +1,19 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_cs32b03ujno0fvdn37v0",
+    "operations": [
+      {
+        "drop_column": {
+          "table": "users",
+          "column": "age"
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_cs32b03ujno0fvdn37v0",
+  "parent": "mig_cs32ao3ujno0fvdn37u0",
+  "schema": "public",
+  "startedAt": "2024-10-09T06:41:05.116118Z"
+}
